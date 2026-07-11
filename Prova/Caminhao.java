@@ -1,0 +1,18 @@
+package Prova;
+public class Caminhao extends VeiculoMotorizado {
+
+    private double capacidadeToneladas;
+
+    public Caminhao(String placa, String modelo, double valorDiaria, boolean locado, int ano, double capacidadeToneladas) {
+        super(placa, modelo, valorDiaria, locado, ano);
+        this.capacidadeToneladas = capacidadeToneladas;
+    }
+    @Override
+    public String getTipo() {
+        return "Caminhão";
+    }
+    @Override
+    public String toString() {
+        return super.toString() + ", Capacidade: " + capacidadeToneladas + "t" + ", Ano: " + ano;
+    }
+}
